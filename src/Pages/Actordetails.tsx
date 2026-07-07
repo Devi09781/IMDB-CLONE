@@ -1,7 +1,9 @@
-import { div } from "framer-motion/client";
-import { Award, Instagram, Star, Twitter } from "lucide-react";
+
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import { Award, Star } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Actordetails = () => {
   const actors = [
@@ -217,13 +219,13 @@ const Actordetails = () => {
                   href={actor.socialMedia.instagram}
                   className="text-gray-400 hover:text-white"
                 >
-                  <Instagram className="w-6 h-6" />
+                  <FaInstagram className="w-6 h-6" />
                 </a>
                 <a
                   href={actor.socialMedia.twitter}
                   className="text-gray-400 hover:text-white"
                 >
-                  <Twitter className="w-6 h-6" />
+                  <FaXTwitter className="w-6 h-6" />
                 </a>
               </div>
             </div>
