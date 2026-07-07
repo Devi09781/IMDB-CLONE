@@ -1,7 +1,7 @@
 import { Star, Trophy } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
+
 import { Link } from "react-router-dom";
 const Toprated = () => {
   const movies = [
